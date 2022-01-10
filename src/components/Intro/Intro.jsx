@@ -6,9 +6,10 @@ const Intro = () => {
 	const textRef = useRef();
 
 	useEffect(() => {
-		console.log(textRef);
 		init(textRef.current, {
-			showCursor: false,
+			showCursor: true,
+			backDelay: 1000,
+			backSpeed: 60,
 			strings: ['Developer', 'Designer', 'Content Creator'],
 		});
 	}, []);
